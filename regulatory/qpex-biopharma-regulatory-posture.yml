@@ -1,0 +1,12 @@
+generated: '2026-10-23'
+method: probed
+source:
+  - url: https://www.qpexbio.com/privacy-policy/
+    http_status: 200
+    fetched: /tmp/qpex_privacy.html
+signals:
+  - name: subprocessors
+    evidence:
+      quote: "We may share your personal data with third parties where you have instructed us or provided your consent to do so."
+      section: Privacy Policy
+      note: Indicates use of subprocessors for providing services.

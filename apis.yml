@@ -1,25 +1,74 @@
 aid: qpex-biopharma
+
 name: Qpex Biopharma
-description: 'Qpex Biopharma is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://qpexprod.wpenginepowered.com/wp-content/uploads/gram-negative-bacteria-scaled.webp
+
+description: 'Qpex Biopharma is a biopharmaceutical company focused on developing novel antimicrobial therapies to combat the global threat of antimicrobial resistance (AMR). The company builds a pipeline of innovative antibiotics and anti‑infective agents, aiming to address urgent and serious bacterial and fungal pathogens worldwide. Through advanced research and collaborations, Qpex Biopharma seeks to replenish the dwindling antibiotic pipeline and provide effective treatments for patients in need.'
+
 url: https://raw.githubusercontent.com/api-evangelist/qpex-biopharma/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Biopharma
+- Antimicrobial
+- Antibiotics
+- Healthcare
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/qpex-biopharma-hosts.yml
+- type: Newsroom
+  url: https://www.qpexbio.com/news/
+- type: Leadership
+  url: https://www.qpexbio.com/company/leadership/
+- type: DomainSecurity
+  url: security/qpex-biopharma-domain-security.yml
 - type: Website
   url: https://www.qpexbio.com
+- type: TermsOfService
+  url: https://www.qpexbio.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.qpexbio.com/privacy-policy/
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.qpexbio.com
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
